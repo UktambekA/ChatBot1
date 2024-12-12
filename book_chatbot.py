@@ -44,8 +44,7 @@ class BookChatbot:
         cache_path = f"vector_store_{file_hash}"
         try:
             if os.path.exists(cache_path):
-                # shutil.rmtree(cache_path)
-                shutil.rmtree(f"vector_store_{file_hash}")
+                shutil.rmtree(cache_path)
 
             vector_store.save_local(cache_path)
             self.logger.info(f"Vektor {cache_path}ga saqlandi.")
