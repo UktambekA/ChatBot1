@@ -1,0 +1,7 @@
+
+fpdf
+streamlit
+PyPDF2
+langchain
+langchain-community
+openai
